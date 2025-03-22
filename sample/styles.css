@@ -1,0 +1,100 @@
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Link styles */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00; /* Change to a contrasting color on hover */
+    text-decoration: underline;
+}
+
+/* Light theme styles */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+/* Dark theme for container */
+body.dark-theme .container {
+    background-color: #495057;
+}
+
+/* Button styles */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Styles for the stock data display */
+#stockData {
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the indices data display */
+#indicesData {
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark theme styles for stock data display */
+body.dark-theme #stockData {
+    background: #495057;
+    color: #ffffff;
+}
+
+/* Dark theme styles for indices data display */
+body.dark-theme #indicesData {
+    background: #495057;
+    color: #ffffff;
+}
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

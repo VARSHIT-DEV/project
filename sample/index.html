@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Stock Market Trend Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Login to Stock Market Trend Analyzer</h1>
+        <a href="login.html">Login</a> | <a href="signup.html">Sign Up</a>
+        <button id="themeToggle">Toggle Theme</button>
+    </header>
+
+
+    <div class="container">
+        <div id="stockAnalysisGraphs">
+            <h2>Stock Analysis Graphs</h2>
+            <canvas id="stockGraph" width="400" height="200"></canvas>
+            <p id="graphPlaceholder">Stock analysis graph will be displayed here.</p>
+            <div id="stockDataDisplay">
+                <h3>Stock Data</h3>
+                <div id="stockData"></div>
+                <h3>Indices</h3>
+                <div id="indicesData"></div>
+            </div>
+        </div>
+
+        <div id="stockData">
+            <h2>Currency Converter</h2>
+            <input type="text" id="usdAmount" placeholder="Amount in USD">
+            <button onclick="convertCurrency()">Convert to INR</button>
+            <div id="conversionResult"></div>
+
+            <h2>Stock Market Trends</h2>
+            <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol">
+            <button onclick="fetchStockData(document.getElementById('stockSymbol').value)">Get Stock Data</button>
+            <div id="results"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Stock Market Trend Analyzer</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
